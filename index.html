@@ -7,20 +7,20 @@
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="./css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
     
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./css/aos.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/ionicons.min.css">
     
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flaticon.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 
 
@@ -54,6 +54,90 @@
 .skill-mf .progress .progress-bar {
   height: .7rem;
   background-color: #ffbd39;
+}
+
+@media (max-width: 768px) {
+  /* Adjust navigation */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  /* Make text and images responsive */
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust spacing */
+  .ftco-section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further adjustments for very small screens */
+  h1 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+.slider-item .text {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add padding to keep it away from the edges */
+  background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better readability */
+  color: white; /* Ensure the text contrasts well */
+  border-radius: 10px; /* Optionally, round the corners of the text box */
+}
+
+/* Make the Second Image Mobile-Friendly */
+@media (max-width: 768px) {
+  .about-mf .about-img img {
+    max-width: 80%; /* Scale down the image */
+    margin: auto; /* Center the image */
+    display: block;
+  }
+}
+
+/* Use a Different Font Size for Mobile */
+@media (max-width: 768px) {
+  .slider-item .text {
+    font-size: 1.5rem; /* Reduce font size on smaller screens */
+  }
+}
+
+/* Add Margins or Padding to the Text */
+.slider-item .text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* For smaller screens, move the text down */
+@media (max-width: 768px) {
+  .slider-item .text {
+    margin-top: 150px; /* Adjust this value so the face is visible */
+  }
+
+  /* If needed, scale the image slightly to keep the face in frame */
+  .slider-item .img {
+    background-size: cover;
+    background-position: top; /* Adjust the position to show more of the face */
+  }
 }
 
 
@@ -111,12 +195,6 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  .one-third.js-fullheight {
-    background-position: center top; /* Shift the image upwards so the top part is more visible */
-  }
-}
-
 
 </style>
 
@@ -149,10 +227,16 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="onlyForTheSmallScreensForImg one-third js-fullheight order-md-last img" style="background-image:url(../Portfolio-Website-Template-main/Samarth-removebg.png);">
+
+                <!-- area of change -->
+	          	<div class="one-third  js-fullheight order-md-last img" style="background-image:url(../Portfolio-Website-Template-main/Samarth-removebg.png);height: 1000px; object-fit: contain;">
 	          	 <div class="overlay"></div>
 	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <!-- area of change -->
+
+                
+		          <!-- <div class="one-forth forSmScreens d-flex  align-items-end ftco-animate" data-scrollax=" properties: { translateY: '70%' }"> -->
+		          <div class="one-forth forSmScreens d-flex  align-items-end ftco-animate" style="" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Samarth Bolaj</span></h1>
@@ -203,6 +287,9 @@
 						</p>
 		            </div>
 		          </div>
+
+
+                  
 	        	</div>
 	        </div>
 	      </div>
